@@ -79,15 +79,15 @@ Run both checks before any classification or sub-report creation. Either check m
 
 Every observation maps to one or more of the following:
 
-|             |            |               |               |
-| ----------- | ---------- | ------------- | ------------- |
-| Automations | Hierarchy  | List view     | Timeline view |
-| Imports     | Fields     | Board view    | Mindmap       |
-| Chat        | Templates  | Table view    | Gantt view    |
-| Inbox       | Search     | Box/Team view | Calendar view |
-| Docs        | Cards      | Workload view |               |
-| Task view   | Mobile     |               |               |
-| Whiteboards | ClickUp AI |               |               |
+|             |                        |               |               |
+| ----------- | ---------------------- | ------------- | ------------- |
+| Automations | Hierarchy              | List view     | Timeline view |
+| Imports     | Fields                 | Board view    | Mindmap       |
+| Chat        | Templates/Duplication  | Table view    | Gantt view    |
+| Inbox       | Search                 | Box/Team view | Calendar view |
+| Docs        | Cards                  | Workload view | Sidebar       |
+| Task view   | Mobile                 | Overviews     |               |
+| Whiteboards | ClickUp AI             |               |               |
 
 > A single report may span **multiple product areas**. This is common. Do not collapse them — each area will get its own sub-report.
 

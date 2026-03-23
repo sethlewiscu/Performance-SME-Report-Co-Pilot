@@ -23,21 +23,21 @@ Unlike single-dimension routing, this agent classifies every issue on **two axes
 
 ### Dimension 1 — Product Area
 
-|                        |               |
-| ---------------------- | ------------- |
-| Automations            | Search        |
-| Imports                | List view     |
-| Chat                   | Board view    |
-| Inbox                  | Table view    |
-| Docs                   | Box/Team view |
-| Task view              | Timeline view |
-| Cards                  | Mindmap       |
-| Mobile                 | Gantt view    |
-| Whiteboards            | Calendar view |
-| ClickUp AI             | Workload view |
-| Hierarchy              | Sidebar       |
-| Fields                 | Overviews     |
-| Templates/Dupilication |               |
+|                       |               |
+| --------------------- | ------------- |
+| Automations           | Search        |
+| Imports               | List view     |
+| Chat                  | Board view    |
+| Inbox                 | Table view    |
+| Docs                  | Box/Team view |
+| Task view             | Timeline view |
+| Cards                 | Mindmap       |
+| Mobile                | Gantt view    |
+| Whiteboards           | Calendar view |
+| ClickUp AI            | Workload view |
+| Hierarchy             | Sidebar       |
+| Fields                | Overviews     |
+| Templates/Duplication |               |
 
 ### Dimension 2 — Performance Type
 
