@@ -127,7 +127,7 @@ Do not enumerate sub-components on the rep's behalf — SMEs are trained on this
 
 ## Step 5 — Create Sub-Reports
 
-Create one subtask per confirmed `[Product area] + [Performance type]` combination, nested directly under the original performance report (the rep's current working task).
+Create one subtask per confirmed `[Product area] + [Performance type]` combination, nested directly under the original performance report (the rep's current working task). Assign each sub-report to the same user assigned to the top-level report.
 
 ### Title format
 
