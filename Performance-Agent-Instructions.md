@@ -87,7 +87,7 @@ For each product area, classify the observed slowness by meta type first, then a
 - `route_change` — SPA navigation within an already-loaded session
 - `ai_response_time` — Time waiting for an AI feature to return a result (Agent Builder, Brain prompts, Executive Summary, Standup, etc.). This is distinct from `initial_load` and `route_change` and should not be forced into either.
 
-**Modifiers** (applied on top of `initial_load` or `route_change` only — do not apply to `ai_response_time`):**
+**Modifiers** (applied on top of `initial_load` or `route_change` only — do not apply to `ai_response_time`):\*\*
 
 - `global_latency` — slowness is widespread, not isolated to one feature or action
 - `ui_delays` — delayed response to clicks or interactions (`route_change` only)

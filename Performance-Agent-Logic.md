@@ -47,7 +47,7 @@ There are two **meta types**. Every performance classification maps to one of th
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- | ------------------------ | --------------------- |
 | **`initial_load`**      | User loads the app for the first time, refreshes a page, or opens a new tab — regardless of which product area they land in | First app load / Refresh / New tab | > 15 seconds             | ≤ 15 seconds          |
 | **`route_change`**      | SPA navigation — moving between views or tasks within an already-loaded app session                                         | —                                  | > 5 seconds consistently | ≤ 5 seconds           |
-| **`ai_response_time`**  | Time waiting for an AI feature to return output — Agent Builder, Brain prompts, Executive Summary, Standup, etc.            | —                                  | `[PENDING]`              | `[PENDING]`           |
+| **`ai_response_time`**  | Time waiting for an AI feature to return output — Agent Builder, Brain prompts, Executive Summary, Standup, etc.            | —                                  | All delays reportable    | —                     |
 
 **Modifiers** (applied on top of meta types):
 

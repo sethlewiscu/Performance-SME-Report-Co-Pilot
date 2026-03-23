@@ -103,9 +103,9 @@ Classify every issue by **meta type** first, then apply a modifier if applicable
 | ------------------ | ------------------------------------------------------------------------------------------------------ | ---------------------------------- | ---------------------------- | --------------- |
 | `initial_load`     | App load on first visit, refresh, or new tab — regardless of product area                              | First app load / Refresh / New tab | **> 15 seconds**             | ≤ 15 seconds    |
 | `route_change`     | SPA navigation within an already-loaded session                                                        | —                                  | **> 5 seconds consistently** | ≤ 5 seconds     |
-| `ai_response_time` | Time waiting for an AI feature to return output (Agent Builder, Brain prompts, Executive Summary, etc.) | —                                  | **[PENDING]**                | **[PENDING]**   |
+| `ai_response_time` | Time waiting for an AI feature to return output (Agent Builder, Brain prompts, Executive Summary, etc.) | —                                  | All delays reportable        | —               |
 
-> `ai_response_time` does not accept `global_latency` or `ui_delays` modifiers. Treat all reported AI response delays as reportable until a threshold is defined.
+> `ai_response_time` does not accept `global_latency` or `ui_delays` modifiers.
 
 **Modifiers** (applies to `initial_load` and `route_change` only):
 
