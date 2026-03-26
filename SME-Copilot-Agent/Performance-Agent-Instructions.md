@@ -260,9 +260,9 @@ Set this status when the SME needs to follow up with the user directly. Guide th
 
 ## Context
 
-- Performance report tasks live in undefined ([https://app.clickup-stg.com/333/v/li/980200129712](https://app.clickup-stg.com/333/v/li/980200129712)). Treat the currently open performance report as the “original report” when creating sub-reports.
-- Engineering defects and performance-related engineering work for this workflow live in the undefined ([https://app.clickup-stg.com/333/v/s/35400004](https://app.clickup-stg.com/333/v/s/35400004)) space and are tagged `ts - perf`. When creating a new defect from this workflow, create it in undefined ([https://app.clickup-stg.com/333/v/li/650700028](https://app.clickup-stg.com/333/v/li/650700028)) within that space and ensure it is tagged `ts - perf`, then link it back to the relevant sub-report.
-- Performance SMEs collaborate and discuss investigations in undefined ([https://app.clickup-stg.com/333/chat/r/6-980700293010-8](https://app.clickup-stg.com/333/chat/r/6-980700293010-8)). Use this channel only as a source of additional context when needed, not as a place to post updates by default.
+- Performance report tasks live in ([https://app.clickup-stg.com/333/v/li/980200129712](https://app.clickup-stg.com/333/v/li/980200129712)). Treat the currently open performance report as the “original report” when creating sub-reports.
+- Engineering defects and performance-related engineering work for this workflow live in the ([https://app.clickup-stg.com/333/v/s/35400004](https://app.clickup-stg.com/333/v/s/35400004)) space and are tagged `ts - perf`. When creating a new defect from this workflow, create it in ([https://app.clickup-stg.com/333/v/li/650700028](https://app.clickup-stg.com/333/v/li/650700028)) within that space and ensure it is tagged `ts - perf`, then link it back to the relevant sub-report.
+- Performance SMEs collaborate and discuss investigations in ([https://app.clickup-stg.com/333/chat/r/6-980700293010-8](https://app.clickup-stg.com/333/chat/r/6-980700293010-8)). Use this channel only as a source of additional context when needed, not as a place to post updates by default.
 - Use the **Performance Agent Reference Document** as the single source of truth for:
   - Valid product area names
   - Performance meta types, modifiers, and thresholds
@@ -270,9 +270,9 @@ Set this status when the SME needs to follow up with the user directly. Guide th
   - Custom field IDs (including the `🔗 Linked tasks` field)
   - Tag strings and API parameters for engineering task queries
   - Status names and escalation criteria
-    Reference it directly via: [https://app.clickup-stg.com/undefined/docs/ad-2624061/ad-7792473](https://app.clickup-stg.com/undefined/docs/ad-2624061/ad-7792473).
-- Engineering tasks for performance work should be searched within the undefined ([https://app.clickup-stg.com/333/v/s/35400004](https://app.clickup-stg.com/333/v/s/35400004)) space. When searching for engineering tasks in Step 3, scope your search to tasks in this space that are tagged `ts - perf` and match the confirmed product area(s) and performance type(s).
-- When escalating to TIM, use the canonical ClickUp team mention [@undefined](#user_group_mention#%7B%22id%22:%2279167198-0f99-4375-b389-63dfffc0fe9d%22,%22name%22:%22Performance%20TIM%22,%22handle%22:%22performance-tim%22,%22notify%22:true%7D) and tag them in a comment on the appropriate sub-report when the SME confirms they want an escalation.
+    Reference it directly via: [https://app.clickup-stg.com/333/docs/ad-2624061/ad-7792473](https://app.clickup-stg.com/333/docs/ad-2624061/ad-7792473).
+- Engineering tasks for performance work should be searched within the EPD Squad ([https://app.clickup-stg.com/333/v/s/35400004](https://app.clickup-stg.com/333/v/s/35400004)) space. When searching for engineering tasks in Step 3, scope your search to tasks in this space that are tagged `ts - perf` and match the confirmed product area(s) and performance type(s).
+- When escalating to TIM, use the canonical ClickUp team mention (#user_group_mention#%7B%22id%22:%2279167198-0f99-4375-b389-63dfffc0fe9d%22,%22name%22:%22Performance%20TIM%22,%22handle%22:%22performance-tim%22,%22notify%22:true%7D) and tag them in a comment on the appropriate sub-report when the SME confirms they want an escalation.
 
 ---
 
