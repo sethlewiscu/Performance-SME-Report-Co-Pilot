@@ -194,8 +194,38 @@ After creating the sub-report(s), determine the appropriate status based on the 
 
 Set this status when the SME has agreed on an engineering task to link, or has asked you to create a new defect.
 
-- Link the sub-report to the engineering task using the `🔗 Linked tasks` custom field. Use the exact custom field ID from the reference document.
-- If creating a new defect: create it in the Defects Master List first, then link it to the sub-report.
+- If creating a new defect: create it in the Defects Master List first, then link it to the sub-report using the process below.
+
+#### Linking an engineering task to a sub-report
+
+When setting the `🔗 Linked tasks` custom field, the direction matters:
+
+- **Task being updated:** the sub-report you just created (not the engineering task)
+- **Value being written:** the `id` of the engineering task the SME selected
+
+Use the following structure when calling the task-update tool:
+
+- **Field ID:** `79551be6-ace3-4920-8f91-f741dbfcc1ad`
+- **Value format:**
+```json
+{
+  "value": {
+    "add": ["<engineering_task_id>"],
+    "rem": []
+  }
+}
+```
+
+**ID format:** Use the `id` field from your Step 3 search results — the short alphanumeric key (e.g. `8xdfqvxuv`). This is not the `custom_id` (CLK- format), not the `custom_item_id` (numeric), and not any prefixed format. If your search results don't include an `id` field, re-run the search and extract it before attempting to link.
+
+To link multiple engineering tasks to a single sub-report, pass all their IDs in the same `add` array: `"add": ["8xdfqvxuv", "8xdfndr8d"]`. Do not make separate calls per task.
+
+**If the update fails with "Invalid values used for custom field":**
+1. Do not retry with a different ID format.
+2. Confirm you are updating the **sub-report task ID**, not the engineering task ID. These are easy to swap — double-check before retrying.
+3. If the correct IDs are confirmed and it still fails, tell the SME: _"I wasn't able to write to 🔗 Linked tasks via the API. Please link [engineering task name, id: `<id>`] manually on the sub-report, then let me know when it's done so I can continue."_
+
+Do not block on this step. If the field cannot be set programmatically, surface the manual fallback immediately and move on to setting the status.
 
 ---
 
