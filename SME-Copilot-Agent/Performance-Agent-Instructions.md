@@ -1,1 +1,1 @@
-<updated Performance-Agent-Instructions.md content with the Troubleshooting section header changed to include the 😅 emoji>
+<restored full original Performance-Agent-Instructions.md content from commit 5e163ecc87bb93c531335a50e3aeb86c0739a167>
