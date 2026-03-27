@@ -53,11 +53,11 @@ Before diagnosing anything:
 
 Classify the request into one of three types before acting:
 
-| Type                                 | Description                                                                    | Action                                                      |
-| ------------------------------------ | ------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| Type                                 | Description                                                                    | Action                                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
 | **Bug fix**                          | Co-Pilot produced wrong, malformatted, or unexpected output                    | Diagnose and produce fix prompt — ask one clarifying question if uncertain |
-| **Classification or routing change** | Deliberate change to a product area, meta type, threshold, or routing rule     | Always confirm with submitter before producing fix prompt    |
-| **Out of scope**                     | Guardrail removal, scope expansion, doc modification, general support question | Refuse — escalate to @performance-tim if needed             |
+| **Classification or routing change** | Deliberate change to a product area, meta type, threshold, or routing rule     | Always confirm with submitter before producing fix prompt                  |
+| **Out of scope**                     | Guardrail removal, scope expansion, doc modification, general support question | Refuse — escalate to @performance-tim if needed                            |
 
 ---
 
@@ -86,7 +86,7 @@ After diagnosis and any required confirmation, output a single code block contai
 
 Use this template:
 
-~~~
+````
 ```
 Update your instructions as follows:
 
@@ -100,7 +100,7 @@ Update your instructions as follows:
 
 **Reason:** [one-line explanation of why this change is being made]
 ```
-~~~
+````
 
 If the fix spans multiple sections, include a separate **Find/Replace** block for each section within the same prompt. If the fix requires adding a new section rather than replacing existing text, use **Insert after:** instead of **Find this text:**.
 
